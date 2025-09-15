@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5</title>
+
+    <style>
+        img
+        {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="plik">
+    <br>
+    Liczba kopii: <input type="number" id="inp2">
+    <br>
+    <input type="radio" id="inp3" value="1.5"> Papier błyszczący
+    <br>
+    <input type="radio" id="inp4" value="2"> Papier matowy
+    <br>
+    <button id="btn">Dodaj do koszyka</button>
+
+    <div id="koszyk">
+
+    </div>
+
+
+    <script>
+        
+        const btn = document.querySelector("#btn")
+        btn.addEventListener("click", function ()
+        {
+            let img = document.createElement("img")
+            img.src = URL.createObjectURL(document.querySelector("#plik").files[0]) 
+            koszyk.appendChild(img)
+
+            let in2 = document.querySelector("#inp2").value
+            let cos = document.createElement("p")
+            cos.innerHTML = "Kopie: " + in2
+            koszyk.appendChild(cos)
+        })
+    </script>
+</body>
+</html>
