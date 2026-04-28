@@ -1,0 +1,45 @@
+body
+{
+    font-family: century;
+    text-align: center;
+}
+
+header, footer
+{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+}
+
+div
+{
+    width: 50%;
+    height: 470px;
+}
+
+img
+{
+    padding: 3px;
+    margin: 10px;
+    border: 2px slateblue dashed;
+}
+
+button
+{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding-top: 10px; padding-bottom: 10px;
+    padding-left: 20px; padding-right: 20px;
+}
+
+button:hover
+{
+    background-color: indigo;
+}
+
+input[type="range"]
+{
+    width: 80%;
+}
